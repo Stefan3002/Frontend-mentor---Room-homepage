@@ -134,7 +134,7 @@ body {
 
 .bottom-left-section {
   grid-area: bottom-left;
-  background: url("../images/image-about-dark.jpg");
+  background: url("images/image-about-dark.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -156,7 +156,7 @@ body {
 
 .bottom-right-section {
   grid-area: bottom-right;
-  background: url("../images/image-about-light.jpg");
+  background: url("images/image-about-light.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -33,7 +33,7 @@
         bgSection.style.backgroundPosition = `center`
     }
 
-    const slideData = ['../images/desktop-image-hero-1.jpg', '../images/desktop-image-hero-2.jpg', '../images/desktop-image-hero-3.jpg']
+    const slideData = ['images/desktop-image-hero-1.jpg', 'images/desktop-image-hero-2.jpg', 'images/desktop-image-hero-3.jpg']
     const slides = document.querySelectorAll('.slide-section')
     let activeSlide = document.querySelector('.visible')
     let index = 0
