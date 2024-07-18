@@ -1,0 +1,50 @@
+@import "./variables"
+
+.main-nav
+  color: $white
+  background: url("../images/desktop-image-hero-1.jpg")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  grid-area: hero-left
+  ul
+    //display: flex
+    //align-content: center
+    .logo
+      font-size: 1.5rem
+      margin-right: 1rem
+    margin-left: 3rem
+    margin-top: 2rem
+    padding: 0
+    display: flex
+    gap: 10px
+    list-style-type: none
+    li
+      a
+        text-decoration: none
+        color: inherit
+        font-weight: 500
+
+.hamburger-list
+  display: flex
+  gap: 10px
+.hamburger-extended
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  background: white
+  color: $black
+  z-index: 202
+  display: flex
+  justify-content: space-around
+  align-items: center
+  height: 100px
+  margin: 0 !important
+.hamburger
+  margin: 2.5rem 1.3rem
+  z-index: 201
+
+@media screen and (max-width: $mobile-bp)
+  .main-nav
+    height: 300px

@@ -1,0 +1,33 @@
+@import "variables"
+
+
+body
+  margin: 0
+  padding: 0
+  font-family: "League Spartan", serif
+  font-size: 12px
+//Weights: 500, 600, 700
+
+.wrapper
+  display: grid
+  grid-template-rows: 2fr 1fr
+  grid-template-columns: 1fr 1fr 1fr
+  grid-template-areas: 'hero-left hero-left hero-right' 'bottom-left bottom-center bottom-right'
+
+.not-visible
+  display: none
+  visibility: hidden
+.blur
+  position: fixed
+  background: rgba(0,0,0,0.6)
+  z-index: 100
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+
+@media screen and (max-width: $mobile-bp)
+  .wrapper
+    grid-template-columns: 1fr
+    grid-template-rows: auto
+    grid-template-areas: 'hero-left' 'hero-right' 'bottom-left' 'bottom-center' 'bottom-right'

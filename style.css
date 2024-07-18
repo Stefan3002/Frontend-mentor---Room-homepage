@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", serif;
+  font-size: 12px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "hero-left hero-left hero-right" "bottom-left bottom-center bottom-right";
+}
+
+.not-visible {
+  display: none;
+  visibility: hidden;
+}
+
+.blur {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: 375px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "hero-left" "hero-right" "bottom-left" "bottom-center" "bottom-right";
+  }
+}
+.main-nav {
+  color: hsl(0, 0%, 100%);
+  background: url("../images/desktop-image-hero-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-area: hero-left;
+}
+.main-nav ul {
+  margin-left: 3rem;
+  margin-top: 2rem;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+}
+.main-nav ul .logo {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+.main-nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+
+.hamburger-list {
+  display: flex;
+  gap: 10px;
+}
+
+.hamburger-extended {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  color: hsl(0, 0%, 0%);
+  z-index: 202;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  margin: 0 !important;
+}
+
+.hamburger {
+  margin: 2.5rem 1.3rem;
+  z-index: 201;
+}
+
+@media screen and (max-width: 375px) {
+  .main-nav {
+    height: 300px;
+  }
+}
+.slide-section .shop-button {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+.top-right-section {
+  position: relative;
+  grid-area: hero-right;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding: 5rem;
+  min-height: 40vh;
+}
+.top-right-section .nav-buttons {
+  display: flex;
+  gap: 60px;
+  background: hsl(0, 0%, 0%);
+  width: fit-content;
+  padding: 1.5rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.top-right-section button {
+  background: transparent;
+  border: none;
+  letter-spacing: 10px;
+  text-align: left;
+}
+.top-right-section p {
+  color: hsl(0, 0%, 63%);
+  line-height: 18px;
+}
+.top-right-section h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  color: hsl(0, 0%, 0%);
+}
+
+.bottom-left-section {
+  grid-area: bottom-left;
+  background: url("../images/image-about-dark.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bottom-center-section {
+  grid-area: bottom-center;
+  padding: 2rem;
+}
+.bottom-center-section h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+}
+.bottom-center-section p {
+  line-height: 18px;
+  color: hsl(0, 0%, 63%);
+}
+
+.bottom-right-section {
+  grid-area: bottom-right;
+  background: url("../images/image-about-light.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 375px) {
+  .bottom-left-section, .bottom-right-section {
+    min-height: 200px;
+  }
+  .top-right-section {
+    padding: 2rem;
+    max-height: 200px;
+  }
+  .nav-buttons {
+    top: -73px;
+    right: 0;
+    left: auto !important;
+    bottom: auto !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

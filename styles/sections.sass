@@ -1,0 +1,75 @@
+.slide-section
+  .shop-button
+    display: flex
+    align-items: center
+    font-weight: 700
+
+
+.top-right-section
+  position: relative
+  .nav-buttons
+    display: flex
+    gap: 60px
+    background: $black
+    width: fit-content
+    padding: 1.5rem
+    position: absolute
+    left: 0
+    bottom: 0
+  grid-area: hero-right
+  display: flex
+  flex-direction: column
+  align-content: center
+  justify-content: center
+  padding: 5rem
+  min-height: 40vh
+  button
+    background: transparent
+    border: none
+    letter-spacing: 10px
+    text-align: left
+  p
+    color: $dark-grey
+    line-height: 18px
+
+  h2
+    font-weight: 700
+    font-size: 2rem
+    color: $black
+.bottom-left-section
+  grid-area: bottom-left
+  background: url("../images/image-about-dark.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+
+.bottom-center-section
+  grid-area: bottom-center
+  padding: 2rem
+  h3
+    font-weight: 700
+    font-size: 1.5rem
+    letter-spacing: 5px
+  p
+    line-height: 18px
+    color: $dark-grey
+
+
+.bottom-right-section
+  grid-area: bottom-right
+  background: url("../images/image-about-light.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+
+@media screen and (max-width: $mobile-bp)
+  .bottom-left-section, .bottom-right-section
+    min-height: 200px
+  .top-right-section
+    padding: 2rem
+    max-height: 200px
+  .nav-buttons
+    top: -73px
+    right: 0
+    left: auto !important
+    bottom: auto !important
